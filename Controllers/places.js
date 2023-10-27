@@ -18,35 +18,35 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    res.send('POST /places stub')
+    res.send('POST /places')
 })
 
 router.get('/new', (req, res) => {
-    res.send('GET /places/new stub')
+    res.render('places/new')
 })
 
 router.get('/:id', (req, res) => {
-    res.send('GET /places/:id stub')
+    res.send('GET /places/:id')
 })
 
 router.put('/:id', (req, res) => {
-    res.send('PUT /places/:id stub')
+    res.send('PUT /places/:id')
 })
 
 router.delete('/:id', (req, res) => {
-    res.send('DELETE /places/:id stub')
+    res.send('DELETE /places/:id')
 })
 
 router.get('/:id/edit', (req, res) => {
-    res.send('GET /places/:id/edit stub')
+    res.send('GET /places/:id/edit')
 })
 
 router.post('/:id/rant', (req, res) => {
-    res.send('GET /places/:id/rant stub')
+    res.send('GET /places/:id/rant')
 })
 
 router.delete('/:id/rant/:rantId', (req, res) => {
-    res.send('GET /places/:id/rant/:rantId stub')
+    res.send('GET /places/:id/rant/:rantId')
 })
 
 
