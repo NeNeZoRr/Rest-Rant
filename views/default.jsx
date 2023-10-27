@@ -12,8 +12,7 @@ function Def(html) {
             <body>
                 {html.children}
             </body>
-            <footer class="footer">
-                Footer
+            <footer className="footer">
             </footer>
         </html>
     )

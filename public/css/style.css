@@ -1,8 +1,20 @@
+main {
+  background-color: rgb(255, 190, 190);
+  color: black;
+}
 h1 {
     text-align: center;
-    color: cornflowerblue;
+    color: rgb(17, 81, 201);
   }
+.cheesecake {
+  text-align: center;
 
+}
+.btn-primary {
+  color: black;
+  font-weight: bold;
+  background-color: cornflowerblue;
+}
 .col-sm-6 {
     text-align: center;
     margin-top: 4%;
