@@ -1,6 +1,6 @@
 nav {
   background-color: cornflowerblue;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -101,4 +101,7 @@ form input {
   outline: none;
   border-radius: 5px;
   border: 1px solid #000;
+}
+.ShowPg {
+  min-height: auto;
 }
