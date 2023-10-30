@@ -7,6 +7,7 @@ function new_form() {
             <main className="form-sheet">
                 <h1>Add a New Place</h1>
                 <form method="POST" action="/places">
+                    <div className="addplaceform">
                     <div className="form-group">
                         <label htmlFor="name">Place Name</label>
                         <input className="form-control" id="name" name="name" required />
@@ -27,7 +28,10 @@ function new_form() {
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required />
                     </div>
+                    </div>
+                    <div className="addplacebtn">
                     <input className="btn btn-primary" type="submit" value="Add Place" />
+                    </div>
                 </form>
             </main>
         </Def>

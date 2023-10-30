@@ -13,7 +13,7 @@ function index(data) {
         <p className="text-center">
           {place.cuisines}
         </p>
-        <img style={{ width: 400, height: 400 }}  src={place.pic} alt={place.name} />
+        <img style={{ width: 400, height: 400 }} src={place.pic} alt={place.name} />
         <p className="text-center">
           Located in {place.city}, {place.state}
         </p>
@@ -24,9 +24,13 @@ function index(data) {
   return (
     <Def>
       <main>
-        <h1>Places to Rant or Rave About</h1>
-        <div className="row">
-          {placesFormatted}
+        <div className="placestitle">
+          <h1>Places to Rant or Rave About</h1>
+          <div>
+          </div>
+          <div className="row">
+            {placesFormatted}
+          </div>
         </div>
       </main>
     </Def>

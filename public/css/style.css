@@ -21,6 +21,7 @@ h1 {
 nav {
   background-color: cornflowerblue;
   padding: 10px;
+  align-items: center;
 }
 
 nav ul {
@@ -46,12 +47,14 @@ nav a:hover {
 body {
   background-color: salmon;
   text-align: center;
+  color: black;
 }
 
 main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
+  color: black;
 }
 
 .editpg {
@@ -64,23 +67,70 @@ main {
   padding: 10%;
 }
 
+.placestitle {
+  margin-bottom: 10%;
+  padding-bottom: 5
+}
+
+.form-group {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.form-control {
+  background-color: lightgray;
+}
+
+.addplaceform {
+  padding: 1%;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+}
+
+.addplacebtn {
+  margin-top: 1%;
+  padding-top: 2%;
+  align-content: center;
+  margin: auto;
+  width: 30%;
+  height: auto;
+}
+
 .btn-primary {
   background-color: lightblue;
   color: black;
   font-weight: bold;
 }
 
-.btn btn-warning {
-  margin: auto;
+.actionbtn {
+  display: inline-flex;
+  align-content: space-between
 }
 
-.btn btn-danger {
-  margin: auto;
+.yellowbtn {
+  margin-left: auto;
+  width: 60%;
+  padding: 1%;
 }
 
-.BBQpic {
-  margin: auto;
-  padding-top: 5%;
+.redbtn {
+  margin-right: auto;
+  width: 60%;
+  padding: 1%;
+}
+
+.Showpic {
+  margin-top: 2%;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 footer {
