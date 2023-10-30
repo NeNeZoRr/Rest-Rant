@@ -1,7 +1,11 @@
+h1 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
 nav {
   background-color: cornflowerblue;
   padding: 10px;
-  text-align: center;
 }
 
 nav ul {
@@ -24,84 +28,13 @@ nav a:hover {
   text-decoration: none;
 }
 
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
 main {
-  background-color: rgb(219, 170, 155);
-  color: black;
   margin-right: 20px;
   margin-left: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: rgb(17, 81, 201);
-      margin-top: 8%;
-      padding: -10%;
-    }
-
-.cheesecake {
-  text-align: center;
-
-}
-
-.btn-primary {
-  color: black;
-  font-weight: bold;
-  background-color: cornflowerblue;
-}
-
-.btn-primary:hover {
-  background-color: rgb(150, 179, 233);
-}
-.col-sm-6 {
-    text-align: center;
-    margin-top: 4%;
-
-}
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  background-color: rgb(219, 170, 155);
-  margin: auto;
-  text-align: center;
-}
-.footer {
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.form-sheet {
-  text-align: center;
-}
-
-.form-control {
-  align-content: center;
-  background-color: lightgray;
-  margin: auto;
-  height: 1.75em;
-  width: 70%;
-  outline: none;
-  padding: 0 1em;
-  border-radius: 5px;
-  border: 1px solid #000;
-}
-
-.form-group {
-color: black;
-font-weight: bold;
-font-size: 1.2em;
-}
-form input {
-  margin-top: 1% ;
-  width: 10%;
-  height: auto;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #000;
-}
-.ShowPg {
-  min-height: auto;
+  background-color: white;
 }
