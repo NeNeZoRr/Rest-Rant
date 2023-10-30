@@ -1,3 +1,6 @@
+html {
+  color: black;
+}
 h1 {
   text-align: center;
   color: cornflowerblue;
@@ -29,7 +32,7 @@ nav a:hover {
 }
 
 body {
-  background-color: lightblue;
+  background-color: salmon;
   text-align: center;
 }
 
@@ -42,4 +45,23 @@ main {
 .editpg {
   text-align: center;
   align-items: center;
+}
+
+.btn-primary {
+background-color: lightblue;
+color: black;
+font-weight: bold;
+}
+
+.btn btn-warning {
+margin: auto;
+}
+
+.btn btn-danger {
+margin: auto;
+}
+
+.BBQpic {
+  margin: auto;
+  padding-top: 5%;
 }
