@@ -35,24 +35,31 @@ router.get('/:id', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-    let id = Number(req.params.id);
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!places[id]) {
+        res.render('error404')
+    }
+    else {
+        // Dig into req.body and make sure data is valid
+        if (!req.body.pic) {
+            // Default image if one is not provided
+            req.body.pic = 'images/Error404.jpg'
+        }
+        if (!req.body.city) {
+            req.body.city = 'Anytown'
+        }
+        if (!req.body.state) {
+            req.body.state = 'USA'
+        }
 
-    if (isNaN(id) || id < 0 || id >= places.length) {
-        return res.render('error404');
+        // Save the new data into places[id]
+        places[id] = req.body
+        res.redirect(`/places/${id}`)
     }
-
-    if (!req.body.pic) {
-        req.body.pic = '/images/Error404.jpg';
-    }
-    if (!req.body.city) {
-        req.body.city = 'Anytown';
-    }
-    if (!req.body.state) {
-        req.body.state = 'USA';
-    }
-    places[id] = req.body;
-    res.redirect(`/places/${id}`);
-});
+})
 
 router.delete('/:id', (req, res) => {
     let id = Number(req.params.id);
