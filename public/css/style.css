@@ -1,6 +1,18 @@
 html {
   color: black;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
 h1 {
   text-align: center;
   color: cornflowerblue;
@@ -47,21 +59,33 @@ main {
   align-items: center;
 }
 
+.editPG {
+  margin-top: 5%;
+  padding: 10%;
+}
+
 .btn-primary {
-background-color: lightblue;
-color: black;
-font-weight: bold;
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
 }
 
 .btn btn-warning {
-margin: auto;
+  margin: auto;
 }
 
 .btn btn-danger {
-margin: auto;
+  margin: auto;
 }
 
 .BBQpic {
   margin: auto;
   padding-top: 5%;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  height: 50px;
 }

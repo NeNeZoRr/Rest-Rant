@@ -10,6 +10,7 @@ function Def(html) {
                 <link rel="stylesheet" href="/css/style.css" />
             </head>
             <body>
+                <div className="wrapper">
                 <nav>
                     <ul>
                         <li>
@@ -24,10 +25,13 @@ function Def(html) {
                     </ul>
                 </nav>
                 {html.children}
-                <footer className="footer">
+                <div className="push">
+                    </div>
+                </div>
+            </body>
+            <footer className="footer">
                 Author: Lin Z
             </footer>
-            </body>
         </html>
     )
 }
