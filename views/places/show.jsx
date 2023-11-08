@@ -34,7 +34,7 @@ function show(data) {
                         <h1>{data.place.name}</h1>
                         <h2>Comments</h2>
                         {comments}
-                        <br />
+                        <br/>
                         <h2> Description</h2>
                         <h3>
                             {data.place.showEstablished()}
