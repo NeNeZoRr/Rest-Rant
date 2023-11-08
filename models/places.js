@@ -2,14 +2,14 @@ const mongoose = require('mongoose');
 
 const placeSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    pic: String,
+    pic: { type: String, default: '/default-image.jpg' },
     cuisines: { type: String, required: true },
     city: { type: String, default: 'Anytown' },
     state: { type: String, default: 'USA' },
     founded: Number,
     comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }]
 }, {
-    strictPopulate: false  // Set strictPopulate to false to allow populating undefined paths
+    strictPopulate: false
 });
 
 placeSchema.methods.showEstablished = function () {

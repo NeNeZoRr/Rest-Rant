@@ -7,4 +7,4 @@ const commentSchema = new mongoose.Schema({
     content: { type: String, default: '' }
 });
 
-module.exports = mongoose.model('Comment', commentSchema); // Register the model
+module.exports = mongoose.model('Comment', commentSchema); 
