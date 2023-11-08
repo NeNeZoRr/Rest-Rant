@@ -28,7 +28,6 @@ router.post('/', (req, res) => {
     })
 })
 
-
 router.post('/:id/comment', (req, res) => {
     db.Place.findById(req.params.id)
         .then(place => {
