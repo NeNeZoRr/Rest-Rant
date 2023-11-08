@@ -104,7 +104,7 @@ function show(data) {
                         </div>
                         <div className="form-group col-sm-2">
                             <label htmlFor="rant">Rant?</label>
-                            <input type="checkbox" id="rant" name="rant" className="form-control" />
+                            <input type="rant" id="rant" name="rant" className="form-control" />
                         </div>
                     </div>
                     <input type="submit" className="btn btn-primary" value="Add Comment" />
