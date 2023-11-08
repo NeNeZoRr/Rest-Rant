@@ -1,13 +1,12 @@
-module.exports = [{
-    name: 'BBQ&MORE',
-    city: 'Austin',
-    state: 'Texas',
-    cuisines: 'American, BQQ',
-    pic: '/images/BBQ.jpg'
-}, {
-    name: 'Nigh Out Bar',
-    city: 'L.A',
-    state: 'California',
-    cuisines: 'Snacks, Drinks',
-    pic: '/images/BarScene.jpg'
-}]
+const mongoose = require('mongoose')
+
+const placeSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  pic: String,
+  cuisines: { type: String, required: true },
+  city: { type: String, default: 'Anytown' },
+  state: { type: String, default: 'USA' },
+  founded: Number
+})
+
+module.exports = mongoose.model('Place', placeSchema)
