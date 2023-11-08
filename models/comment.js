@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Comment = require('./comment')
 
 let commentSchema = new mongoose.Schema({
     author: { type: String, default: 'Anonymous' },
