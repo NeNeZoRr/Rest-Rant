@@ -42,6 +42,27 @@ function show(data) {
                         <h4>
                             Serving {data.place.cuisines}
                         </h4>
+                        <form method="POST" action={`/places/:id`}>
+                            <div className="form-group">
+                                <label htmlFor="author">Author</label>
+                                <input className="form-control" id="author" name="author" required />
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rant" name="rant" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Rant 'check if it's a rant'
+                                </label>
+                            </div>
+                            <div className="form-group">
+                                <label for="customRange3" class="form-label">Stars</label>
+                                <input type="range" class="form-range" min="0" max="5" step="0.5" id="stars" name="stars" />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="content">Content</label>
+                                <input className="form-control" id="content" name="content" />
+                            </div>
+                            <input className="btn btn-primary" type="submit" value="Add Comment" />
+                        </form>
                         <br />
                         <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                             Edit

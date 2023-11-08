@@ -6,7 +6,8 @@ function newForm(data) {
     if (data.message) {
         message = (
             <h4 className="alert-danger">{data.message} </h4>
-        )}
+        )
+    }
     return (
         <Def>
             <main>
@@ -33,17 +34,17 @@ function newForm(data) {
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required />
                     </div>
+                    <div className="form-group">
+                        <label for="founded">Founded Year</label>
+                        <input
+                            className="form-control"
+                            id="founded"
+                            name="founded"
+                            value={new Date().getFullYear()}
+                        />
+                    </div>
                     <input className="btn btn-primary" type="submit" value="Add Place" />
                 </form>
-                <div className="form-group">
-                    <label for="founded">Founded Year</label>
-                    <input
-                        className="form-control"
-                        id="founded"
-                        name="founded"
-                        value={new Date().getFullYear()}
-                    />
-                </div>
             </main>
         </Def>
     )
