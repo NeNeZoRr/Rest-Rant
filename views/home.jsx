@@ -7,7 +7,7 @@ function home() {
       <main>
         <h1>REST-Rant</h1>
         <div className="cheesecake">
-          <img style={{ width: 500, height: 600 }} src="images\cheesecake.jpg" alt="Berry CheeseCake" />
+          <img style={{ width: 500, height: 600 }} src="images/cheesecake.jpg" alt="Berry CheeseCake" />
           <div>
             Photo by <a href="AUTHOR_LINK">Anna Tukhfatullina</a> On <a href="UNSPLASH_LINK">Unsplash</a>
             <div className="btn">
