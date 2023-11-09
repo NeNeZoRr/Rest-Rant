@@ -80,17 +80,16 @@ main {
 
 .form-control {
   background-color: lightgray;
+  width: 100%;
 }
 
 .checkbox-container {
   margin-bottom: 10px;
 }
 
-
 .form-control {
   margin-right: 5px;
 }
-
 
 .form-control:checked+label::before {
   content: '\2713';
@@ -102,12 +101,9 @@ main {
   outline: 2px solid #00a8ff;
 }
 
-
 .label {
   font-size: 14px;
 }
-
-
 
 .addplaceform {
   padding: 1%;
