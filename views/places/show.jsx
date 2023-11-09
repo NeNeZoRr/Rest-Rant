@@ -64,7 +64,7 @@ function show(data) {
                 <hr />
                 <h2>Comments</h2>
                 <div className="row">
-                {comments}
+                    {comments}
                 </div>
                 <hr />
                 <h2>Got Your Own Rant or Rave?</h2>
@@ -85,8 +85,8 @@ function show(data) {
                             <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
                         </div>
                         <div className="form-group col-sm-2">
-                            <label htmlFor="rant">Rant?</label>
-                            <input type="rant" id="rant" name="rant" className="form-control" />
+                        <label htmlFor="rant" className="label">Rant?</label>
+                        <input type="checkbox" id="rant" name="rant" className="form-control" />
                         </div>
                     </div>
                     <input type="submit" className="btn btn-primary" value="Add Comment" />
