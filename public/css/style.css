@@ -1,9 +1,9 @@
+/* General styles for all screen sizes */
 html {
   color: black;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
 }
@@ -51,8 +51,8 @@ body {
 }
 
 main {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
   background-color: white;
   color: black;
 }
@@ -68,8 +68,7 @@ main {
 }
 
 .placestitle {
-  margin-bottom: 10%;
-  padding-bottom: 5
+  margin-bottom: 5%;
 }
 
 .form-group {
@@ -78,46 +77,29 @@ main {
   font-size: 1.1em;
 }
 
+/* Adjusted styles for the drop-down menu */
 .form-control {
+  appearance: none;
+  -webkit-appearance: none;
   background-color: lightgray;
   width: 100%;
-}
-
-.checkbox-container {
-  margin-bottom: 10px;
-}
-
-.form-control {
-  margin-right: 5px;
-}
-
-.form-control:checked+label::before {
-  content: '\2713';
-  color: #00a8ff;
-  font-size: 16px;
-}
-
-.form-control:focus+label {
-  outline: 2px solid #00a8ff;
-}
-
-.label {
-  font-size: 14px;
+  padding: 10px; /* Adjust padding for better visual */
+  border: 1px solid #ccc; /* Add border for better visual */
+  border-radius: 5px; /* Add border-radius for better visual */
 }
 
 .addplaceform {
-  padding: 1%;
-  width: 50%;
-  align-items: center;
+  padding: 2%;
+  width: 70%;
   margin: auto;
 }
 
 .addplacebtn {
-  margin-top: 1%;
+  margin-top: 2%;
   padding-top: 2%;
   align-content: center;
   margin: auto;
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 
@@ -133,15 +115,8 @@ main {
   align-content: space-between;
 }
 
-.yellowbtn {
-  margin-left: auto;
-  width: 60%;
-  padding: 1%;
-}
-
-.redbtn {
-  margin-right: auto;
-  width: 60%;
+.yellowbtn, .redbtn {
+  width: 70%;
   padding: 1%;
 }
 
@@ -153,6 +128,7 @@ main {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -162,4 +138,20 @@ footer {
   color: black;
   font-weight: bold;
   height: 50px;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  main {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  .addplaceform {
+    width: 90%;
+  }
+
+  .addplacebtn {
+    width: 80%;
+  }
 }

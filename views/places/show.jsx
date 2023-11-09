@@ -87,8 +87,8 @@ function show(data) {
                         <div className="form-group col-sm-2">
                             <label htmlFor="rant" className="label">Rant?</label>
                             <select id="rant" name="rant" className="form-control">
-                                <option value="no">No</option>
                                 <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                         </div>
                     </div>
