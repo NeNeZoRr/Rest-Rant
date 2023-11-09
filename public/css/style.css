@@ -3,7 +3,8 @@ html {
   color: black;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -79,14 +80,12 @@ main {
 
 /* Adjusted styles for the drop-down menu */
 .form-control {
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: lightgray; 
+  background-color: lightgray;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  color: lightgray; 
+  color: black;
 }
 
 .addplaceform {
@@ -117,7 +116,8 @@ main {
   align-content: space-between;
 }
 
-.yellowbtn, .redbtn {
+.yellowbtn,
+.redbtn {
   width: 70%;
   padding: 1%;
 }
@@ -135,12 +135,29 @@ main {
   justify-content: space-around;
 }
 
+/* Styles for the rant checkbox */
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-check-label {
+  margin-left: 1%;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-top: 20%;
+ align-items: center;
+}
+
 footer {
   text-align: center;
   color: black;
   font-weight: bold;
   height: 50px;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 /* Responsive media queries */

@@ -3,10 +3,14 @@ const Def = require('../default')
 
 function show(data) {
     let comments = (
-        <h3 className="inactive"> No comments yet!</h3>
+        <h3 className="inactive">
+            No comments yet!
+        </h3>
     )
     let rating = (
-        <h3 className="inactive">Not yet rated </h3>
+        <h3 className="inactive">
+            Not yet rated
+        </h3>
     )
     if (data.place.comments.length) {
         let sumRatings = data.place.comments.reduce((tot, c) => {
@@ -18,14 +22,18 @@ function show(data) {
             stars += '⭐️'
         }
         rating = (
-            <h3>{stars} stars</h3>
+            <h3>
+                {stars} stars
+            </h3>
         )
         comments = data.place.comments.map(c => {
             return (
                 <div className="border col-sm-4">
                     <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
                     <h4>{c.content}</h4>
-                    <h3><stong>- {c.author}</stong></h3>
+                    <h3>
+                        <stong>- {c.author}</stong>
+                    </h3>
                     <h4>Rating: {c.stars}</h4>
                     <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
                         <input type="submit" className="btn btn-danger" value="Delete Comment" />
@@ -40,16 +48,26 @@ function show(data) {
                 <div className="row">
                     <div className="col-sm-6">
                         <img style={{ width: 300, height: 300 }} src={data.place.pic} alt={data.place.name} />
-                        <h3> Located in {data.place.city}, {data.place.state}</h3>
+                        <h3>
+                            Located in {data.place.city}, {data.place.state}
+                        </h3>
                     </div>
                     <div className="col-sm-6">
                         <h1>{data.place.name}</h1>
-                        <h2>Rating</h2>
+                        <h2>
+                            Rating
+                        </h2>
                         {rating}
                         <br />
-                        <h2>Description</h2>
-                        <h3>{data.place.showEstablished()}</h3>
-                        <h4>Serving {data.place.cuisines}</h4>
+                        <h2>
+                            Description
+                        </h2>
+                        <h3>
+                            {data.place.showEstablished()}
+                        </h3>
+                        <h4>
+                            Serving {data.place.cuisines}
+                        </h4>
                         <br />
                         <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
                             Edit
@@ -84,14 +102,9 @@ function show(data) {
                             <label htmlFor="stars">Star Rating</label>
                             <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
                         </div>
-                        <div className="form-group col-sm-2">
-                            <label htmlFor="rant" className="label">Rant?</label>
-                            <div className="form-control">
-                                <select id="rant" name="rant" className="select-box">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </select>
-                            </div>
+                        <div className="form-group col-sm-2 form-check"> {/* Add form-check class here */}
+                            <label htmlFor="rant" className="form-check-label">Rant?</label>
+                            <input type="checkbox" id="rant" name="rant" className="form-check-input" /> {/* Remove form-control class */}
                         </div>
                     </div>
                     <input type="submit" className="btn btn-primary" value="Add Comment" />
