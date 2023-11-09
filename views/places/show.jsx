@@ -86,10 +86,12 @@ function show(data) {
                         </div>
                         <div className="form-group col-sm-2">
                             <label htmlFor="rant" className="label">Rant?</label>
-                            <select id="rant" name="rant" className="form-control">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
+                            <div className="form-control">
+                                <select id="rant" name="rant" className="select-box">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <input type="submit" className="btn btn-primary" value="Add Comment" />
