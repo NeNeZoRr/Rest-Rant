@@ -15,7 +15,7 @@ app.use(methodOverride('_method'));
 const Comment = require('./models/comment');
 
 // Controllers & Routes
-app.use('/places', require('./controllers/places'));
+app.use('/places', require('./Controllers/places'));
 
 app.get('/', (req, res) => {
     res.render('home');
